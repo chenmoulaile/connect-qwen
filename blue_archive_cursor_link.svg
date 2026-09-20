@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blue Archive Style Mouse Cursor - Link Select
+  蔚蓝档案风格鼠标指针 - 链接选择
+  
+  Design: Similar to normal select but with enhanced halo and sparkle effects
+  to indicate interactivity
+-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" 
+     viewBox="0 0 64 64">
+  
+  <defs>
+    <linearGradient id="cursorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="haloGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <radialGradient id="linkGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Glow background for link indication -->
+  <ellipse cx="20" cy="30" rx="18" ry="22" fill="url(#linkGlow)" opacity="0.4"/>
+  
+  <!-- Main cursor arrow body -->
+  <path d="M 8,4 L 8,52 L 16,44 L 24,56 L 32,52 L 24,40 L 32,40 Z" 
+        fill="url(#cursorGradient)" 
+        stroke="#0077b6" 
+        stroke-width="2"
+        stroke-linejoin="round"/>
+  
+  <!-- Inner highlight -->
+  <path d="M 12,12 L 12,45 L 17,40 L 22,48 L 26,46 L 21,38 L 26,38 Z" 
+        fill="#ffffff" 
+        opacity="0.6"/>
+  
+  <!-- Blue accent stripe -->
+  <path d="M 10,8 L 10,48 L 14,44 L 18,50 L 22,48 L 18,40 L 24,40" 
+        fill="none" 
+        stroke="url(#blueAccent)" 
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.9"/>
+  
+  <!-- Enhanced halo ring at tip -->
+  <circle cx="8" cy="6" r="6" 
+          fill="none" 
+          stroke="#00d4ff" 
+          stroke-width="2"
+          filter="url(#haloGlow)"
+          opacity="1"/>
+  
+  <!-- Double halo rings -->
+  <circle cx="8" cy="6" r="4" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5"
+          opacity="0.9"/>
+  
+  <circle cx="8" cy="6" r="2" 
+          fill="none" 
+          stroke="#00a8e8" 
+          stroke-width="1"
+          opacity="0.8"/>
+  
+  <!-- Star sparkles indicating link -->
+  <path d="M 3,6 L 13,6 M 8,1 L 8,11" 
+        stroke="#ffd700" 
+        stroke-width="1.2"
+        stroke-linecap="round"
+        opacity="0.9"/>
+  
+  <path d="M 30,10 L 36,10 M 33,7 L 33,13" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <path d="M 28,50 L 33,50 M 30.5,47.5 L 30.5,52.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <!-- Extra sparkles for link effect -->
+  <circle cx="38" cy="20" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="12" cy="60" r="1.5" fill="#ffd700" opacity="0.7"/>
+  <circle cx="40" cy="35" r="1" fill="#00d4ff" opacity="0.6"/>
+  
+  <!-- Small diamond shapes -->
+  <path d="M 35,45 L 37,47 L 39,45 L 37,43 Z" 
+        fill="#ffd700" 
+        opacity="0.7"/>
+  
+</svg>
