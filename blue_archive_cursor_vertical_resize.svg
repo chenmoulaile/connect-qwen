@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blue Archive Style Mouse Cursor - Vertical Resize (NS/SW)
+  蔚蓝档案风格鼠标指针 - 垂直调整大小
+  
+  Design: Double-headed arrow (North-South) with halo elements
+-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" 
+     viewBox="0 0 64 64">
+  
+  <defs>
+    <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="haloGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Top arrow head -->
+  <path d="M 32,4 L 20,20 L 28,20 L 28,28 L 36,28 L 36,20 L 44,20 Z" 
+        fill="url(#arrowGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"
+        stroke-linejoin="round"/>
+  
+  <!-- Bottom arrow head -->
+  <path d="M 32,60 L 20,44 L 28,44 L 28,36 L 36,36 L 36,44 L 44,44 Z" 
+        fill="url(#arrowGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"
+        stroke-linejoin="round"/>
+  
+  <!-- Center bar connecting arrows -->
+  <rect x="28" y="26" width="8" height="12" rx="2" ry="2"
+        fill="url(#arrowGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Inner highlight top arrow -->
+  <path d="M 32,10 L 24,20 L 29,20 L 29,26 L 35,26 L 35,20 L 40,20 Z" 
+        fill="#ffffff" 
+        opacity="0.6"/>
+  
+  <!-- Inner highlight bottom arrow -->
+  <path d="M 32,54 L 24,44 L 29,44 L 29,38 L 35,38 L 35,44 L 40,44 Z" 
+        fill="#ffffff" 
+        opacity="0.6"/>
+  
+  <!-- Blue accent line vertical -->
+  <line x1="32" y1="8" x2="32" y2="56" 
+        stroke="url(#blueAccent)" 
+        stroke-width="2"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Halo ring at center -->
+  <circle cx="32" cy="32" r="7" 
+          fill="none" 
+          stroke="#00a8e8" 
+          stroke-width="1.5"
+          filter="url(#haloGlow)"
+          opacity="0.9"/>
+  
+  <circle cx="32" cy="32" r="4" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1"
+          opacity="0.7"/>
+  
+  <!-- Star sparkle at center -->
+  <path d="M 32,28 L 32,36 M 28,32 L 36,32" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Sparkles at arrow tips -->
+  <path d="M 32,6 L 32,10 M 30,8 L 34,8" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <path d="M 32,54 L 32,58 M 30,56 L 34,56" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <!-- Decorative dots -->
+  <circle cx="22" cy="15" r="1.5" fill="#00a8e8" opacity="0.7"/>
+  <circle cx="42" cy="15" r="1.5" fill="#00a8e8" opacity="0.7"/>
+  <circle cx="22" cy="49" r="1.5" fill="#ffd700" opacity="0.6"/>
+  <circle cx="42" cy="49" r="1.5" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- Side sparkles -->
+  <path d="M 16,32 L 19,32 M 17.5,30.5 L 17.5,33.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <path d="M 45,32 L 48,32 M 46.5,30.5 L 46.5,33.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <!-- Additional glow dots -->
+  <circle cx="18" cy="25" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="46" cy="25" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="18" cy="39" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="46" cy="39" r="1" fill="#00d4ff" opacity="0.5"/>
+  
+</svg>

@@ -1,0 +1,1 @@
+Nothing should be ignored in this case, as the added files are all cursor SVG files and a README markdown file, which are source/config files rather than build artifacts, dependencies, or temporary files.

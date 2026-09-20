@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blue Archive Style Mouse Cursor - Busy/Wait
+  蔚蓝档案风格鼠标指针 - 忙碌/等待
+  
+  Design: Hourglass or circular loading indicator with halo effects
+  Using a circular design with rotating elements suggestion
+-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" 
+     viewBox="0 0 64 64">
+  
+  <defs>
+    <linearGradient id="circleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="haloGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background glow -->
+  <circle cx="32" cy="32" r="20" fill="url(#centerGlow)" opacity="0.5"/>
+  
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="18" 
+          fill="none" 
+          stroke="#0077b6" 
+          stroke-width="2"
+          opacity="0.3"/>
+  
+  <!-- Main circular body segments (suggesting rotation) -->
+  <path d="M 32,14 A 18,18 0 0,1 45,19" 
+        fill="none" 
+        stroke="url(#circleGradient)" 
+        stroke-width="4"
+        stroke-linecap="round"
+        filter="url(#haloGlow)"/>
+  
+  <path d="M 50,25 A 18,18 0 0,1 50,39" 
+        fill="none" 
+        stroke="url(#circleGradient)" 
+        stroke-width="4"
+        stroke-linecap="round"
+        filter="url(#haloGlow)"
+        opacity="0.8"/>
+  
+  <path d="M 48,48 A 18,18 0 0,1 38,52" 
+        fill="none" 
+        stroke="url(#circleGradient)" 
+        stroke-width="4"
+        stroke-linecap="round"
+        filter="url(#haloGlow)"
+        opacity="0.6"/>
+  
+  <!-- Blue accent arc -->
+  <path d="M 18,25 A 18,18 0 0,1 18,39" 
+        fill="none" 
+        stroke="url(#blueAccent)" 
+        stroke-width="3"
+        stroke-linecap="round"
+        opacity="0.9"/>
+  
+  <!-- Inner circle -->
+  <circle cx="32" cy="32" r="10" 
+          fill="url(#circleGradient)" 
+          stroke="#0077b6" 
+          stroke-width="1.5"/>
+  
+  <!-- Center halo ring -->
+  <circle cx="32" cy="32" r="7" 
+          fill="none" 
+          stroke="#00a8e8" 
+          stroke-width="1.5"
+          filter="url(#haloGlow)"
+          opacity="0.9"/>
+  
+  <circle cx="32" cy="32" r="5" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1"
+          opacity="0.8"/>
+  
+  <!-- Central star/sparkle -->
+  <path d="M 32,28 L 32,36 M 28,32 L 36,32" 
+        stroke="#ffd700" 
+        stroke-width="1.5"
+        stroke-linecap="round"
+        opacity="0.9"/>
+  
+  <path d="M 29,29 L 35,35 M 29,35 L 35,29" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <!-- Orbiting sparkle dots -->
+  <circle cx="32" cy="10" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="54" cy="32" r="2" fill="#ffd700" opacity="0.7"/>
+  <circle cx="32" cy="54" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="10" cy="32" r="1.5" fill="#ffd700" opacity="0.5"/>
+  
+  <!-- Additional small sparkles -->
+  <path d="M 20,18 L 23,18 M 21.5,16.5 L 21.5,19.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <path d="M 44,46 L 47,46 M 45.5,44.5 L 45.5,47.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+</svg>

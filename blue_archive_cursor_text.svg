@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blue Archive Style Mouse Cursor - Text Select (I-Beam)
+  蔚蓝档案风格鼠标指针 - 文本选择
+  
+  Design: I-beam cursor with halo elements and blue accents
+  Vertical bar with decorative elements
+-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" 
+     viewBox="0 0 64 64">
+  
+  <defs>
+    <linearGradient id="beamGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="haloGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Top horizontal bar -->
+  <rect x="20" y="8" width="24" height="8" rx="3" ry="3"
+        fill="url(#beamGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Bottom horizontal bar -->
+  <rect x="20" y="48" width="24" height="8" rx="3" ry="3"
+        fill="url(#beamGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Vertical beam -->
+  <rect x="28" y="14" width="8" height="36" rx="2" ry="2"
+        fill="url(#beamGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Inner highlight for vertical beam -->
+  <rect x="30" y="16" width="4" height="32" rx="1" ry="1"
+        fill="#ffffff" 
+        opacity="0.7"/>
+  
+  <!-- Blue accent line on beam -->
+  <line x1="32" y1="16" x2="32" y2="48" 
+        stroke="url(#blueAccent)" 
+        stroke-width="2"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Halo ring at top center -->
+  <circle cx="32" cy="12" r="5" 
+          fill="none" 
+          stroke="#00a8e8" 
+          stroke-width="1.5"
+          filter="url(#haloGlow)"
+          opacity="0.9"/>
+  
+  <circle cx="32" cy="12" r="3" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1"
+          opacity="0.7"/>
+  
+  <!-- Star sparkle at top -->
+  <path d="M 32,8 L 32,16 M 28,12 L 36,12" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Decorative elements on horizontal bars -->
+  <circle cx="24" cy="12" r="1.5" fill="#00a8e8" opacity="0.7"/>
+  <circle cx="40" cy="12" r="1.5" fill="#00a8e8" opacity="0.7"/>
+  <circle cx="24" cy="52" r="1.5" fill="#ffd700" opacity="0.6"/>
+  <circle cx="40" cy="52" r="1.5" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- Small sparkles around -->
+  <path d="M 16,20 L 19,20 M 17.5,18.5 L 17.5,21.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <path d="M 45,44 L 48,44 M 46.5,42.5 L 46.5,45.5" 
+        stroke="#ffd700" 
+        stroke-width="0.8"
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <!-- Additional glow dots -->
+  <circle cx="18" cy="32" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="46" cy="32" r="1" fill="#00d4ff" opacity="0.5"/>
+  
+</svg>

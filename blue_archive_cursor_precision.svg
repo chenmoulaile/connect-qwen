@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Blue Archive Style Mouse Cursor - Precision Select
+  蔚蓝档案风格鼠标指针 - 精确选择
+  
+  Design: Crosshair with halo center and decorative elements
+  For precision tasks
+-->
+<svg xmlns="http://www.w3.org/2000/svg" 
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="64" height="64" 
+     viewBox="0 0 64 64">
+  
+  <defs>
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00a8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0077b6;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="haloGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <radialGradient id="centerDot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffaa00;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Horizontal bar -->
+  <rect x="8" y="28" width="48" height="8" rx="3" ry="3"
+        fill="url(#crossGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Vertical bar -->
+  <rect x="28" y="8" width="8" height="48" rx="3" ry="3"
+        fill="url(#crossGradient)" 
+        stroke="#0077b6" 
+        stroke-width="1.5"/>
+  
+  <!-- Inner highlight horizontal -->
+  <rect x="12" y="30" width="40" height="4" rx="1" ry="1"
+        fill="#ffffff" 
+        opacity="0.6"/>
+  
+  <!-- Inner highlight vertical -->
+  <rect x="30" y="12" width="4" height="40" rx="1" ry="1"
+        fill="#ffffff" 
+        opacity="0.6"/>
+  
+  <!-- Blue accent line horizontal -->
+  <line x1="12" y1="32" x2="52" y2="32" 
+        stroke="url(#blueAccent)" 
+        stroke-width="2"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Blue accent line vertical -->
+  <line x1="32" y1="12" x2="32" y2="52" 
+        stroke="url(#blueAccent)" 
+        stroke-width="2"
+        stroke-linecap="round"
+        opacity="0.8"/>
+  
+  <!-- Center circle with halo -->
+  <circle cx="32" cy="32" r="8" 
+          fill="none" 
+          stroke="#00a8e8" 
+          stroke-width="2"
+          filter="url(#haloGlow)"
+          opacity="0.9"/>
+  
+  <circle cx="32" cy="32" r="5" 
+          fill="none" 
+          stroke="#ffffff" 
+          stroke-width="1.5"
+          opacity="0.8"/>
+  
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="3" 
+          fill="url(#centerDot)"
+          opacity="0.9"/>
+  
+  <!-- Small inner sparkle -->
+  <circle cx="32" cy="32" r="1.5" 
+          fill="#ffffff"
+          opacity="0.8"/>
+  
+  <!-- Corner decorations -->
+  <circle cx="12" cy="12" r="2" fill="#00a8e8" opacity="0.7"/>
+  <circle cx="52" cy="12" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="12" cy="52" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="52" cy="52" r="2" fill="#00a8e8" opacity="0.7"/>
+  
+  <!-- Tick marks on cross arms -->
+  <line x1="16" y1="30" x2="16" y2="34" 
+        stroke="#0077b6" 
+        stroke-width="1"
+        opacity="0.6"/>
+  <line x1="48" y1="30" x2="48" y2="34" 
+        stroke="#0077b6" 
+        stroke-width="1"
+        opacity="0.6"/>
+  <line x1="30" y1="16" x2="34" y2="16" 
+        stroke="#0077b6" 
+        stroke-width="1"
+        opacity="0.6"/>
+  <line x1="30" y1="48" x2="34" y2="48" 
+        stroke="#0077b6" 
+        stroke-width="1"
+        opacity="0.6"/>
+  
+  <!-- Sparkle stars at ends -->
+  <path d="M 6,32 L 10,32 M 8,30 L 8,34" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <path d="M 54,32 L 58,32 M 56,30 L 56,34" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <path d="M 32,6 L 32,10 M 30,8 L 34,8" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <path d="M 32,54 L 32,58 M 30,56 L 34,56" 
+        stroke="#ffd700" 
+        stroke-width="1"
+        stroke-linecap="round"
+        opacity="0.7"/>
+  
+  <!-- Additional glow dots -->
+  <circle cx="20" cy="20" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="44" cy="20" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="20" cy="44" r="1" fill="#00d4ff" opacity="0.5"/>
+  <circle cx="44" cy="44" r="1" fill="#00d4ff" opacity="0.5"/>
+  
+</svg>
