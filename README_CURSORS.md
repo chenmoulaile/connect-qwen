@@ -48,18 +48,41 @@ All cursors are provided in **SVG (Scalable Vector Graphics)** format, which off
 
 ## Installation / 安装
 
-### Windows
+### Quick Install (Linux) / 快速安装 (Linux)
+
+Simply run the installation script:
+只需运行安装脚本：
+
+```bash
+./install.sh
+# Or for system-wide installation / 或系统级安装
+sudo ./install.sh
+```
+
+The script will:
+- Convert SVG files to the appropriate cursor format
+- Install them to your user or system directory
+- Attempt to activate the theme automatically
+
+脚本将自动：
+- 将 SVG 文件转换为适当的指针格式
+- 安装到用户或系统目录
+- 尝试自动激活主题
+
+### Manual Install / 手动安装
+
+#### Windows
 1. Convert SVG files to `.cur` or `.ani` format using a cursor editor tool
 2. Open Settings > Personalization > Themes > Mouse Cursor
 3. Browse and select the converted cursor files for each cursor type
 4. Save as a new theme
 
-### macOS
+#### macOS
 1. Use a cursor conversion tool to convert SVG to `.cursor` format
 2. Open System Preferences > Accessibility > Display > Pointer
 3. Apply the custom cursor theme
 
-### Linux
+#### Linux
 1. Create a cursor theme directory structure: `~/.icons/BlueArchive/cursors/`
 2. Convert SVG files to PNG format at multiple sizes (24x24, 32x32, 48x48)
 3. Use `xcursorgen` to generate cursor files
